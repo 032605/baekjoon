@@ -13,3 +13,15 @@
 ref.
 - 나머지 증명  [here](https://st-lab.tistory.com/19)
 - JAVA [자바] - 입력 뜯어보기 [Scanner, InputStream, BufferedReader] [here](https://st-lab.tistory.com/41)
+<br>
+<hr>
+<br>
+**빠른 A+B** (15552번)
+
+``` java
+BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+```
+
+write()을 사용하여 출력할 내용을 담고, flush()을 통해서 버퍼를 비워내는 동시에 콘솔에 출력
+>  'write()', 'flush()', 'close()'
