@@ -13,9 +13,9 @@
 ref.
 - 나머지 증명  [here](https://st-lab.tistory.com/19)
 - JAVA [자바] - 입력 뜯어보기 [Scanner, InputStream, BufferedReader] [here](https://st-lab.tistory.com/41)
-<br>
+
 <hr>
-<br>
+
 **빠른 A+B** (15552번)
 
 ``` java
