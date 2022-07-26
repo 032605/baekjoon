@@ -8,34 +8,27 @@ public class Main{
 		
 		int N = Integer.parseInt(br.readLine());
 		
-		boolean[][] arr = new boolean[N][80];
-		int val = 0;
-		int sum = 0;
+		String[] arr = new String[N];
 		
-		for(int i=0; i<N; i++) {
-			
-			String str = br.readLine();
-			
-			for(int j=0; j<str.length(); j++) {
-				if(str.charAt(j) == 'O') {
-					arr[i][j] = true;
-				}
-			}
-			
+		for(int i=0; i<arr.length; i++) {
+			arr[i] = br.readLine();
 		}
 		
+		int val, sum;
+		
 		for(int i=0; i<N; i++) {
 			
+			val = 0;
 			sum = 0;
 			
-			for(int j=0; j<80; j++) {
-				if(arr[i][j]) {
+			for(int j=0; j<arr[i].length(); j++) {
+				if(arr[i].charAt(j) == 'O') {
 					val++;
 					sum += val;
-				} else {
+				} else
 					val = 0;
-				}
 			}
+			
 			System.out.println(sum);
 		}
 		
