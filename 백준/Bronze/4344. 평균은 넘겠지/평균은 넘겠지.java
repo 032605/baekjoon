@@ -27,10 +27,7 @@ public class Main{
 			
 			for(int j=0; j<N; j++) {
 				arr[j] = Integer.parseInt(st.nextToken());	//배열 요소 삽입
-			}
-			
-			for(int k=0; k<N; k++) {
-				sum += arr[k];	// 배열 요소 합 구하기
+				sum += arr[j];	// 배열 요소 합 구하기
 			}
 			
 			for(int m=0; m<N; m++) {
