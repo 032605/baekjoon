@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Main{
+	public static void main(String args[]) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
+		int x = Integer.parseInt(st.nextToken());
+		int y = Integer.parseInt(st.nextToken());
+		int w = Integer.parseInt(st.nextToken());
+		int h = Integer.parseInt(st.nextToken());
+		int xw, yh = 0;
+		
+		if(x>=w) {
+			xw = x-w;
+		} else {
+			xw = w-x;
+		}
+
+		if(y>=h) {
+			yh = y-h;
+		} else {
+			yh = h-y;
+		}
+		
+		int[] arr = {x, y, xw, yh};
+		
+		Arrays.sort(arr);
+		System.out.println(arr[0]);
+	}
+}
