@@ -17,21 +17,17 @@ public class Main{
 			int W = Integer.parseInt(st.nextToken()); 	// 호수
 			int S = Integer.parseInt(st.nextToken());	// 체크인 순서
 			
-			if(S%H==0) {
-				sb.append(H);
-			} else {
-				sb.append(S-H*(S/H));
-			}
+			int y;
+			int x;
 			
-			if(Math.ceil((double) S/H) < 10) {
-				sb.append("0");
-			}
-
 			if(S%H==0) {
-				sb.append(S/H + "\n");
+				y=H*100;
+				x=S/H;
 			} else {
-				sb.append((S/H)+1 + "\n");
+				y=S%H*100;
+				x=(S/H)+1;
 			}
+			sb.append(y+x + "\n");
 		}
 		System.out.println(sb);
 	}
