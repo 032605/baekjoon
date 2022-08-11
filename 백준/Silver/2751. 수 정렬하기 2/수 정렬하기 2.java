@@ -1,8 +1,10 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.Collections;
+import java.util.List;
 
 public class Main{
 	public static void main(String args[]) throws IOException{
@@ -10,15 +12,14 @@ public class Main{
 		StringBuilder sb = new StringBuilder();
 		
 		int N = Integer.parseInt(br.readLine()); 	
-		int[] arr = new int[N];
+		List<Integer> list = new ArrayList<>();
 		
-		for(int i=0; i<N; i++) {
-			arr[i] = Integer.parseInt(br.readLine());
-		}
+		for(int i=0; i<N; i++)
+			list.add(Integer.parseInt(br.readLine()));
 		
-		Arrays.sort(arr);
+		Collections.sort(list);	// Timsort (합병 및 삽입정렬 알고리즘)
 		
-		for(int val : arr) {
+		for(int val : list) {
 			sb.append(val + "\n");
 		}
 			
