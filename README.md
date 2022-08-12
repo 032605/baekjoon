@@ -51,3 +51,8 @@ while(val!=0){
 }
 
 ```
+
+<hr>
+
+[PS 동빈나가 추천한 코딩테스트 가이드](https://merry1031.tistory.com/35)
+
